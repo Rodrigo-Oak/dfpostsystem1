@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>DFPOST</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(36, 36, 233);
+        }
+
+        .a {
+            font-family: Impact
+        }
+    </style>
+
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-color-yellow"
+        style="display:none; background-color: gold;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-color-yellow" onclick="w3_close()"
+            style="background-color: yellow; color: black;">Voltar
+            &times;</button>
+        <div style="font-family:impact; font-size: large; padding-left: 10px;">
+            <a href="#" class="w3-bar-item w3-button">Terrenos</a>
+            <a href="#" class="w3-bar-item w3-button">Comércios</a>
+            <a href="#" class="w3-bar-item w3-button">Etherium</a>
+            <a href="#https://www.google.com/maps/d/viewer?mid=1VfEa_P9RDXxRAz3zvLqMs_L8VGKMfew&ll=-23.086509585011346%2C-45.58737128353064&z=14" class="w3-bar-item w3-button">Mapa das Regionais</a>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <div class="w3-yellow">
+            <button id="openNav" class="w3-button w3-color-yellow w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <br>
+                <div>
+                    <img style="display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                             width: 10%;
+                            " src="css/img/pref logo.png" alt="pref">
+                </div>
+                <div>
+                    <h1 style="font-family: Impact; text-align: center; display: block;">Secretaria de Serviços Públicos
+                    </h1>
+                    <br>
+                    <br>
+                    <h2 style="font-family:impact; text-align: top; height: 100px">Sistema de Fiscalização de Posturas
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="w3-container">
+            
+        </div>
+
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
